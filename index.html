@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ahona!</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+<style>
+  body {
+    font-family: 'Pacifico', cursive;
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .container {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,255,0.5);
+    position: relative;
+    z-index: 2;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: text-glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes text-glow {
+    0% {
+      text-shadow: 2px 2px 4px rgba(0,0,255,0.5);
+    }
+    100% {
+      text-shadow: 0px 0px 10px rgba(0,0,255,0.8), 0px 0px 20px rgba(0,0,255,0.8), 0px 0px 30px rgba(0,0,255,0.8), 0px 0px 40px rgba(0,0,255,0.8);
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f8d9e2;
+    border-radius: 50%;
+    animation: confetti-fall 5s linear infinite;
+  }
+  @keyframes confetti-fall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+  .bokeh {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: bokeh-effect 5s linear infinite;
+  }
+  @keyframes bokeh-effect {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+  .bubble-left,
+  .bubble-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: bubble-rise 10s linear infinite;
+  }
+  .bubble-left {
+    left: 10%;
+  }
+  .bubble-right {
+    right: 10%;
+  }
+  @keyframes bubble-rise {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+  .love-shape {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #ff3366;
+    transform: rotate(45deg);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: love-pulse 3s ease-in-out infinite alternate;
+    z-index: 1;
+  }
+  @keyframes love-pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  .snow {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    opacity: 0.7;
+    animation: snow-fall 10s linear infinite;
+  }
+  @keyframes snow-fall {
+    0% {
+      transform: translateY(-10vh) translateX(10vw);
+    }
+    100% {
+      transform: translateY(100vh) translateX(-10vw);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Happy Birthday Ahona!</h1>
+  <p>Wishing you a day filled with love, laughter, and endless joy!</p>
+</div>
+<div class="confetti"></div>
+<div class="bokeh"></div>
+<div class="bubble-left"></div>
+<div class="bubble-right"></div>
+<div class="snow"></div>
+<div class="love-shape"></div>
+</body>
+</html>
